@@ -1,0 +1,11 @@
+docker run -d \
+  --name nexus \
+  -p 8082:8081 \
+  -v nexus-data:/nexus-data \
+  sonatype/nexus3
+
+
+docker run -d \
+  --name sonarqube \
+  -p 9000:9000 \
+  sonarqube:lts
