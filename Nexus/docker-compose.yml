@@ -13,3 +13,6 @@ services:
     ulimits:
       nofile: 65536
     restart: unless-stopped
+
+volumes:
+  nexus_data:
