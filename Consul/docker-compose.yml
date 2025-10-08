@@ -29,7 +29,7 @@ services:
   consul2:
     image: hashicorp/consul:latest
     container_name: consul2
-    command: consul agent -dev -node=consul2 -client=0.0.0.0 -ui -join=consul1        
+    command: consul agent -dev -node=consul2 -client=0.0.0.0 -ui -join=consul1
     ports:
       - "8501:8500"
     volumes:
